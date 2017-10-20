@@ -15,7 +15,7 @@ set('git_tty', true);
 
 set('ssh_multiplexing', true);
 
-set('http_user', 'cp1otoitncsu');
+set('http_user', '');
 
 // Shared files/dirs between deploys 
 add('shared_files', [
@@ -36,8 +36,8 @@ add('writable_dirs', []);
 
 
 // Hosts
-host('cp1ot.oit.ncsu.edu')
-    ->user('cp1otoitncsu')
+host('')
+    ->user('')
     ->port(24)
     ->set('deploy_path', '~/public_html/{{application}}')
     ->forwardAgent();
